@@ -1,7 +1,5 @@
 package com.nwpu.Test11;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
 import java.util.*;
 
 
@@ -13,21 +11,21 @@ import java.util.*;
  */
 public class Solution {
     private int[] cnts = new int[128];
-    private List<Character>  list = new LinkedList<>();
+    private Queue   queue  = new LinkedList<>();
 
     //Insert one char from stringstream
     public void Insert(char ch)
     {
         cnts[ch]++;
-        list.add(ch);
-        while (!list.isEmpty() && cnts[list.get(0)]>1){
-            list.remove(0);
+        queue.add(ch);
+        while (!queue.isEmpty() && cnts[(char)queue.peek()]>1){
+            queue.poll();
         }
     }
     //return the first appearence once char in current stringstream
     public char FirstAppearingOnce()
     {
-       return list.isEmpty()? '#': list.get(0);
+       return queue.isEmpty()? '#': (char)queue.peek();
     }
 
     public static void main(String[] args) {
