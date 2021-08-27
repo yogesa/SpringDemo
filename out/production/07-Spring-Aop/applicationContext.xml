@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  管理dao对象-->
+    <bean id="demoDao" class="com.nwpu.dao.impl.DemoDaoImpl" />
+    <!--  管理service对象-->
+    <bean id="demoService" class="com.nwpu.service.Impl.DemoServiceImpl">
+        <property name="demoDao" ref="demoDao" />
+    </bean>
+
+    <!--  管理通知对象 -->
+
+    <bean id="begin" class="com.nwpu.advice.TxBeginAdvice" />
+    <bean id="commit" class="com.nwpu.advice.TxCommitAdvice" />
+    <bean id="rollback" class="com.nwpu.advice.TxRollbackAdvice" />
+    <bean id="log" class="com.nwpu.advice.LogAdvice" />
+
+    <!--    配置织入 ， 创建动态代理的过程-->
+
+    <bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--    设置目标对象：真实对象    -->
+        <property name="targetName" value="demoService" />
+        <property name="interceptorNames">
+            <array>
+                <value>begin</value>
+                <value>commit</value>
+                <value>rollback</value>
+                <value>log</value>
+            </array>
+        </property>
+    </bean>
+
+</beans>
