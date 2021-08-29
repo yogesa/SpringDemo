@@ -17,15 +17,18 @@ public class LogAdvice implements MethodInterceptor {
     public Object invoke(MethodInvocation invocation) throws Throwable {
 
         Method method = invocation.getMethod();
-        Object returnValue = new Object();
+        Object returnValue = null;
         //调用真实方法
         try{
+
             System.out.println("[日志前置:]"+method.getName()+"被调用...");
             returnValue = invocation.proceed();
             System.out.println("[日志后置]"+method.getName()+"执行完毕...");
+
         }catch (Exception e){
 
             System.out.println("[日志异常]"+method.getName()+"出现了异常");
+
             throw new RuntimeException("异常传递...");
         }
 

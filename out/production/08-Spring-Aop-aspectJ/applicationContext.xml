@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--    配置管理对象-->
+    <bean id="DemoService" class="com.nwpu.service.DemoService" />
+
+<!--    配置通知对象-->
+    <bean id="Advice" class="com.nwpu.Advice.Advice" />
+
+<!--    aop aspectJ配置-->
+    <aop:config>
+        <aop:pointcut id="pc" expression="execution(* com.nwpu.service.DemoService.*(..))"/>
+        <aop:advisor advice-ref="Advice" pointcut-ref="pc" />
+    </aop:config>
+</beans>
