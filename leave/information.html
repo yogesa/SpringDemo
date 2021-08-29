@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>your information</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style type="text/css">
+    .box {
+        width: 60%;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form class="">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">姓名</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" value="陈光晓">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">学院</label>
+                <input type="text" class="form-control" id="school" aria-describedby="emailHelp" value="计算机学院">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">请假类型</label>
+                <input type="text" class="form-control" id="holidayType" aria-describedby="emailHelp" value="私事">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">请假时长</label>
+                <input type="text" class="form-control" id="holidayTime" aria-describedby="emailHelp" value="4小时">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">请假开始时间</label>
+                <input type="text" class="form-control" id="holidayStart" aria-describedby="emailHelp" value="2021-08-04 18时">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">请假结束时间</label>
+                <input type="text" class="form-control" id="holidayEnd" aria-describedby="emailHelp" value="2021-08-04 22时">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">请假事由</label>
+                <input type="text" class="form-control" id="holidayReason" aria-describedby="emailHelp" value="事假">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">前往目的地</label>
+                <input type="text" class="form-control" id="aimAddress" aria-describedby="emailHelp" value="东大村">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">事由说明</label>
+                <input type="text" class="form-control" id="reasonInstruction" aria-describedby="emailHelp" value="取药">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">审核1</label>
+                <input type="text" class="form-control" id="auditor_1" aria-describedby="emailHelp" value="刘磊">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">审核2</label>
+                <input type="text" class="form-control" id="auditor_2" aria-describedby="emailHelp" value="万海东">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">发起申请时间</label>
+                <input type="text" class="form-control" id="applyTime" aria-describedby="emailHelp" value="08-28">
+            </div>
+            <!-- <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+function set() {
+    //由于是一个新的技术，你可以通过下面的代码检测你的浏览器是否支持 
+    if (window.localStorage) {
+        //存储变量的值 
+        localStorage.name = document.querySelector("#name").value;
+        localStorage.school = document.querySelector("#school").value;
+        localStorage.holidayType = document.querySelector("#holidayType").value;
+        localStorage.holidayTime = document.querySelector("#holidayTime").value;
+        localStorage.holidayStart = document.querySelector("#holidayStart").value;
+        localStorage.holidayEnd = document.querySelector("#holidayEnd").value;
+        localStorage.holidayReason = document.querySelector("#holidayReason").value;
+        localStorage.aimAddress = document.querySelector("#aimAddress").value;
+        localStorage.reasonInstruction = document.querySelector("#reasonInstruction").value;
+        localStorage.auditor_1 = document.querySelector("#auditor_1").value;
+        localStorage.auditor_2 = document.querySelector("#auditor_2").value;
+        localStorage.applyTime = document.querySelector("#applyTime").value;
+    } else {
+        alert("NOT SUPPORT");
+    }
+}
+var button = document.querySelector("button[type=\"submit\"]");
+var form = document.querySelector("form");
+button.addEventListener("click",function(){
+    set();
+    location.href = "./qingjiatiao.html";
+})
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+})
+</script>
