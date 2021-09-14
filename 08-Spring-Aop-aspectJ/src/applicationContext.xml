@@ -8,14 +8,14 @@
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 <!--    配置管理对象-->
-    <bean id="DemoService" class="com.nwpu.service.DemoService" />
+    <bean id="DemoService" class="com.nwpu.jzoffer.service.DemoService" />
 
 <!--    配置通知对象-->
-    <bean id="Advice" class="com.nwpu.Advice.Advice" />
+    <bean id="Advice" class="com.nwpu.jzoffer.Advice.Advice" />
 
 <!--    aop aspectJ配置-->
     <aop:config>
-        <aop:pointcut id="pc" expression="execution(* com.nwpu.service.DemoService.*(..))"/>
+        <aop:pointcut id="pc" expression="execution(* com.nwpu.jzoffer.service.DemoService.*(..))"/>
         <aop:advisor advice-ref="Advice" pointcut-ref="pc" />
     </aop:config>
 </beans>

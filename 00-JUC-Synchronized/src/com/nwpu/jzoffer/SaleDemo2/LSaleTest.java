@@ -1,4 +1,4 @@
-package com.nwpu.SaleDemo2;
+package com.nwpu.jzoffer.SaleDemo2;
 
 
 import java.util.concurrent.locks.ReentrantLock;

@@ -1,7 +1,6 @@
-package com.nwpu.LinkList.Test1;
+package com.nwpu.jzoffer.LinkList.Test1;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
 /**
  * @Author: ch

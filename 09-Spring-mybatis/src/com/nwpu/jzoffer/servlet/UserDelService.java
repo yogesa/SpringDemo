@@ -1,6 +1,6 @@
-package com.nwpu.servlet;
+package com.nwpu.jzoffer.servlet;
 
-import com.nwpu.service.UserService;
+import com.nwpu.jzoffer.service.UserService;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 

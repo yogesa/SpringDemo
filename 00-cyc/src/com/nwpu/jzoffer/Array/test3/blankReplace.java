@@ -1,4 +1,4 @@
-package com.nwpu.Array.test3;
+package com.nwpu.jzoffer.Array.test3;
 
 public class blankReplace {
 

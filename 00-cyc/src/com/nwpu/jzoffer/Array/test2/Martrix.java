@@ -1,4 +1,4 @@
-package com.nwpu.Array.test2;
+package com.nwpu.jzoffer.Array.test2;
 
 public class Martrix {
 

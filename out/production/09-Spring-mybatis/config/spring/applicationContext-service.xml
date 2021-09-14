@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!--   此处管理service层对象-->
-    <bean id="userService" class="com.nwpu.service.impl.UserServiceImpl">
+    <bean id="userService" class="com.nwpu.jzoffer.service.impl.UserServiceImpl">
         <property name="userMapper" ref="userMapper" />
     </bean>
 </beans>

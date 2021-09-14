@@ -1,4 +1,4 @@
-package com.nwpu.LinkList.Test9;
+package com.nwpu.jzoffer.LinkList.Test9;
 
 /**
  * @Author: ch

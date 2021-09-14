@@ -1,4 +1,4 @@
-package com.nwpu.service;
+package com.nwpu.jzoffer.service;
 
 /**
  * @Author: ch

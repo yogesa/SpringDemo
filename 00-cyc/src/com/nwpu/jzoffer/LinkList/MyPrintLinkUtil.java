@@ -1,6 +1,4 @@
-package com.nwpu.LinkList;
-
-import com.nwpu.LinkList.Test4.Solution;
+package com.nwpu.jzoffer.LinkList;
 
 /**
  * @Author: ch

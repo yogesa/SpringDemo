@@ -1,4 +1,4 @@
-package com.nwpu.Array.Test15;
+package com.nwpu.jzoffer.Array.Test15;
 
 /**
  * @Author: ch

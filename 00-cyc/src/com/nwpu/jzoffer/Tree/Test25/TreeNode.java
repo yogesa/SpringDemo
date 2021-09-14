@@ -1,4 +1,4 @@
-package com.nwpu.Tree.Test25;
+package com.nwpu.jzoffer.Tree.Test25;
 
 public class TreeNode {
     int val;

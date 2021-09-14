@@ -8,15 +8,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!--    无参构造函数-->
-<!--    <bean class="com.nwpu.pojo.User" id="user" />-->
+<!--    <bean class="User" id="user" />-->
 <!--    调用有参构造函数创建对象-->
-<!--    <bean class="com.nwpu.pojo.User" id="user">-->
+<!--    <bean class="User" id="user">-->
 <!--       <constructor-arg name="id"  index="0"  type="java.lang.Integer" value="123"/>-->
 <!--        <constructor-arg name="name" index="1" type="java.lang.String" value="张三" />-->
 <!--    </bean>-->
 <!--    调用构造工厂来构造对象-->
-<!--    <bean class="com.nwpu.factory.UserFactory" id="userFactory" />-->
+<!--    <bean class="UserFactory" id="userFactory" />-->
 <!--    <bean factory-bean="userFactory" factory-method="getInstance" />-->
 <!--    调用静态工厂来构造对象-->
-    <bean class="com.nwpu.factory.StaticUserFactory" id="userFactory" factory-method="getInstance" />
+    <bean class="com.nwpu.jzoffer.factory.StaticUserFactory" id="userFactory" factory-method="getInstance" />
 </beans>

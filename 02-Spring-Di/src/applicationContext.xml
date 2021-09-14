@@ -2,12 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="com.nwpu.pojo.Address" id="address3">
+    <bean class="com.nwpu.jzoffer.pojo.Address" id="address3">
         <property name="myCity">
             <value>武汉</value>
         </property>
     </bean>
-    <bean class="com.nwpu.pojo.User" id="user">
+    <bean class="User" id="user">
         <property name="myId" value="2020262947" />
         <property name="myAge">
             <value>25</value>
@@ -32,12 +32,12 @@
 
         <property name="myAddrs" >
          <list>
-             <bean class="com.nwpu.pojo.Address" id="address" >
+             <bean class="com.nwpu.jzoffer.pojo.Address" id="address" >
                  <property name="myCity">
                      <value>北京</value>
                  </property>
              </bean>
-             <bean class="com.nwpu.pojo.Address" id="address2" >
+             <bean class="com.nwpu.jzoffer.pojo.Address" id="address2" >
                  <constructor-arg name="myCity" value="上海"></constructor-arg>
              </bean>
          </list>
@@ -45,11 +45,11 @@
 
         <property name="myCard">
             <set>
-                <bean class="com.nwpu.pojo.MyCard">
+                <bean class="com.nwpu.jzoffer.pojo.MyCard">
                     <property name="cardId" value="790789702834" />
                     <property name="balance" value="1"/>
                 </bean>
-                <bean class="com.nwpu.pojo.MyCard">
+                <bean class="com.nwpu.jzoffer.pojo.MyCard">
                     <property name="cardId">
                         <value>
                             1237972349
@@ -65,13 +65,13 @@
         <property name="cardMap">
             <map>
                 <entry key="建行">
-                    <bean class="com.nwpu.pojo.MyCard">
+                    <bean class="com.nwpu.jzoffer.pojo.MyCard">
                         <property name="cardId" value="123123113212312"/>
                         <property name="balance" value="234.0"/>
                     </bean>
                 </entry>
                 <entry key="农行">
-                    <bean class="com.nwpu.pojo.MyCard">
+                    <bean class="com.nwpu.jzoffer.pojo.MyCard">
                         <property name="cardId" value="778979724224"/>
                         <property name="balance" value="890.0"/>
                     </bean>

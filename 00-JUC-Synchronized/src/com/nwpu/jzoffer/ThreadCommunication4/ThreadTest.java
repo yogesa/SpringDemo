@@ -1,4 +1,4 @@
-package com.nwpu.ThreadCommunication4;
+package com.nwpu.jzoffer.ThreadCommunication4;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

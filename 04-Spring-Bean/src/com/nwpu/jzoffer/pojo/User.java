@@ -1,4 +1,4 @@
-package com.nwpu.pojo;
+package com.nwpu.jzoffer.pojo;
 
 /**
  * @Author: ch

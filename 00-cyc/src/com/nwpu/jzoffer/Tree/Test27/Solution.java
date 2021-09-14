@@ -1,8 +1,4 @@
-package com.nwpu.Tree.Test27;
-
-import com.nwpu.Tree.Test26.TreeLinkNode;
-import org.hamcrest.core.Is;
-import sun.reflect.generics.tree.Tree;
+package com.nwpu.jzoffer.Tree.Test27;
 
 /**
  * @Author: ch

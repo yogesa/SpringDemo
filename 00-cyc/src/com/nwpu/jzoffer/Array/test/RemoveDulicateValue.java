@@ -1,4 +1,4 @@
-package com.nwpu.Array.test;
+package com.nwpu.jzoffer.Array.test;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.nwpu.LinkList.Test3;
+package com.nwpu.jzoffer.LinkList.Test3;
 
 /**
  * 删除重复的节点，有相同的全部删除

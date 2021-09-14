@@ -1,6 +1,6 @@
-package com.nwpu.service;
+package com.nwpu.jzoffer.service;
 
-import com.nwpu.pojo.User;
+import com.nwpu.jzoffer.pojo.User;
 
 import java.util.List;
 

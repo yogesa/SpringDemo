@@ -1,10 +1,7 @@
-package com.nwpu.LinkList.Test6;
+package com.nwpu.jzoffer.LinkList.Test6;
 
-import com.nwpu.LinkList.ListNode;
-import com.nwpu.LinkList.MyPrintLinkUtil;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.nwpu.jzoffer.LinkList.ListNode;
+import com.nwpu.jzoffer.LinkList.MyPrintLinkUtil;
 
 /**
  * @Author: ch

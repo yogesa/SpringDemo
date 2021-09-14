@@ -1,8 +1,7 @@
-package com.nwpu.Test;
+package com.nwpu.jzoffer.Test;
 
-import com.nwpu.mapper.UserMapper;
-import com.nwpu.pojo.User;
-import org.junit.Test;
+import com.nwpu.jzoffer.mapper.UserMapper;
+import com.nwpu.jzoffer.pojo.User;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;

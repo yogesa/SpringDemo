@@ -1,4 +1,4 @@
-package com.nwpu.Array.test14;
+package com.nwpu.jzoffer.Array.test14;
 
 import java.util.ArrayList;
 

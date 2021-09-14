@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- prototype 表示多例模式，当调用getBean()方法时，才会初始化构建对象 -->
     <!-- init 方法，在构造器调用之后，会调用init方法 -->
-    <bean class="com.nwpu.pojo.User" id="user" init-method="init"  scope="prototype">
+    <bean class="User" id="user" init-method="init" scope="prototype">
         <property name="name" value="张三"  />
     </bean>
 

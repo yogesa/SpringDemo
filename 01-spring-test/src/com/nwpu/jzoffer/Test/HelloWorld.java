@@ -1,9 +1,6 @@
-package com.nwpu.Test;
+package com.nwpu.jzoffer.Test;
 
-import com.nwpu.factory.StaticUserFactory;
-import com.nwpu.factory.UserFactory;
-import com.nwpu.pojo.User;
-import javafx.application.Application;
+import com.nwpu.jzoffer.factory.StaticUserFactory;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

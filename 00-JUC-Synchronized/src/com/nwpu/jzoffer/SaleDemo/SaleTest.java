@@ -1,4 +1,4 @@
-package com.nwpu.SaleDemo;
+package com.nwpu.jzoffer.SaleDemo;
 
 /**
  * @Author: ch

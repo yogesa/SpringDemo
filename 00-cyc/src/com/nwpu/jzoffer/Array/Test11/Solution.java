@@ -1,4 +1,4 @@
-package com.nwpu.Array.Test11;
+package com.nwpu.jzoffer.Array.Test11;
 
 import java.util.*;
 

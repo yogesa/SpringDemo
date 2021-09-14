@@ -1,6 +1,4 @@
-package com.nwpu.LinkList.Test4;
-
-import java.util.List;
+package com.nwpu.jzoffer.LinkList.Test4;
 
 /**
  * @Author: ch

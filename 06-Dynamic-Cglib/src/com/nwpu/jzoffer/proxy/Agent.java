@@ -1,4 +1,4 @@
-package com.nwpu.proxy;
+package com.nwpu.jzoffer.proxy;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

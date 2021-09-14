@@ -1,4 +1,4 @@
-package com.nwpu.Array.Test6;
+package com.nwpu.jzoffer.Array.Test6;
 
 import java.util.Stack;
 

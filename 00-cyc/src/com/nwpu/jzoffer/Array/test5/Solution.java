@@ -1,4 +1,4 @@
-package com.nwpu.Array.test5;
+package com.nwpu.jzoffer.Array.test5;
 
 import java.util.BitSet;
 

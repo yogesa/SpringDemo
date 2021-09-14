@@ -1,4 +1,4 @@
-package com.nwpu.proxy;
+package com.nwpu.jzoffer.proxy;
 
 /**
  * @Author: ch

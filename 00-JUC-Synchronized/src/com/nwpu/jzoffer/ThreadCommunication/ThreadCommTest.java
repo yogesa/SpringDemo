@@ -1,4 +1,4 @@
-package com.nwpu.ThreadCommunication;
+package com.nwpu.jzoffer.ThreadCommunication;
 
 /**
  * @Author: ch

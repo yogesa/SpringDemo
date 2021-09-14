@@ -1,4 +1,4 @@
-package com.nwpu.Util;
+package com.nwpu.jzoffer.Util;
 
 public class SpringUtil {
 }

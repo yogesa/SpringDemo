@@ -1,4 +1,4 @@
-package com.nwpu;
+package com.nwpu.jzoffer;
 
 /**
  * @Author: ch

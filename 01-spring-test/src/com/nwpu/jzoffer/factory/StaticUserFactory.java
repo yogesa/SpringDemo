@@ -1,6 +1,6 @@
-package com.nwpu.factory;
+package com.nwpu.jzoffer.factory;
 
-import com.nwpu.pojo.User;
+import com.nwpu.jzoffer.pojo.User;
 
 public class StaticUserFactory {
 

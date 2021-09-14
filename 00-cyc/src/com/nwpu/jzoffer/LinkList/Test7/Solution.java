@@ -1,7 +1,7 @@
-package com.nwpu.LinkList.Test7;
+package com.nwpu.jzoffer.LinkList.Test7;
 
-import com.nwpu.LinkList.ListNode;
-import com.nwpu.LinkList.MyPrintLinkUtil;
+import com.nwpu.jzoffer.LinkList.ListNode;
+import com.nwpu.jzoffer.LinkList.MyPrintLinkUtil;
 
 /**
  * @Author: ch

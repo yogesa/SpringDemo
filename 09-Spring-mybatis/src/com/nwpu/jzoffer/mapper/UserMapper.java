@@ -1,6 +1,6 @@
-package com.nwpu.mapper;
+package com.nwpu.jzoffer.mapper;
 
-import com.nwpu.pojo.User;
+import com.nwpu.jzoffer.pojo.User;
 
 import java.util.List;
 

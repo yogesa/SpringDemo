@@ -1,6 +1,6 @@
-package com.nwpu;
+package com.nwpu.jzoffer;
 
-import com.nwpu.service.DemoService;
+import com.nwpu.jzoffer.service.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
